@@ -1,0 +1,23 @@
+#calculator program
+print("Please select operation -") 
+print("1. Add" ) 
+print("2. Subtract") 
+print("3. Multiply") 
+print("4. Divide") 
+select = input("Select any operations form 1 to 4 :") 
+num1 = int(input("Enter first number: ")) 
+num2 = int(input("Enter second number: ")) 
+
+if(select == '1'): 
+	print(num1, "+", num2, "=", (num1+ num2)) 
+
+elif(select == '2'): 
+	print(num1, "-", num2, "=", (num1- num2)) 
+
+elif(select == '3'): 
+	print(num1, "*", numb2, "=", (num1*num2)) 
+
+elif(select == '4'): 
+	print(num1, "/", num2, "=", (num1/ num2)) 
+else: 
+	print("Invalid input") 
