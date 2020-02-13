@@ -4,6 +4,8 @@ print("1. Add" )
 print("2. Subtract") 
 print("3. Multiply") 
 print("4. Divide") 
+print("5. Modulo") 
+print("6. Square") 
 select = input("Select any operations form 1 to 4 :") 
 num1 = int(input("Enter first number: ")) 
 num2 = int(input("Enter second number: ")) 
@@ -18,6 +20,11 @@ elif(select == '3'):
 	print(num1, "*", numb2, "=", (num1*num2)) 
 
 elif(select == '4'): 
-	print(num1, "/", num2, "=", (num1/ num2)) 
+	print(num1, "/", num2, "=", (num1/ num2))
+elif(select == '5'): 
+	print(num1, "/", num2, "=", (num1% num2)) 
+elif(select == '6'): 
+	print(num1, "/", num2, "=", (num1**num1)) 
+	
 else: 
 	print("Invalid input") 
