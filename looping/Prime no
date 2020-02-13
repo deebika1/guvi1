@@ -1,0 +1,15 @@
+#Checking a number is prime or not
+prime=[]
+nprime=[]
+start=int(input("Enter the length"))
+for i in range(0,start):
+   a=int(input("Enter the element:"))
+   if(a > 1):
+      for i in range(2,a//2+1):
+        if ((a % i) == 0):
+            nprime.append(a)
+            break
+      else:
+       prime.append(a)
+print("prime number list: ",prime)
+print("Non-prime number list: ",nprime)
