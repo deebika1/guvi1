@@ -1,0 +1,21 @@
+#Odd or even program in a list
+all=[]
+odd=[]
+even=[]
+seve=0
+sodd=0
+start=int(input("Enter the length:"))
+for i in range(0,start):
+   a=int(input("Enter the element:"))
+   all.append(a)
+   if ((a % 2) == 0):
+      even.append(a)
+      seve=seve+a
+   else:
+      odd.append(a)
+      sodd=sodd+a
+print("All number list: ",odd)
+print("even number list: ",even)
+print("odd number list: ",odd)
+print("Sum of even number list: ",seve)
+print("sum of odd number list: ",sodd)
