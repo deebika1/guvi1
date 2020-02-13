@@ -1,0 +1,9 @@
+#print all natural number in reverse
+
+number = int(input("Please Enter any Number: "))
+
+print("The List of Natural Numbers from 1 to {0} are".format(number)) 
+def nat():
+    for i in range(number,0,-1):
+        print (i, end = '  ')
+nat()
