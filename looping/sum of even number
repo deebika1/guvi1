@@ -1,0 +1,10 @@
+#find sum if all even number
+n = int(input("Enter Number to calculate sum"))
+def addi():
+    sum = 0
+    for num in range(0, n+1, 1):
+        if(num%2==0):
+            sum = sum+num
+    print("SUM of first ", n, "numbers is: ", sum )
+    return num
+addi()
