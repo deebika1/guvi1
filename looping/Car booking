@@ -1,0 +1,48 @@
+#Coding for car booking
+a=1
+while(a==1):
+    src=float(input("Enter the source km: "))
+    des=float(input("Enter the destination km: "))
+    print("Available sources are")
+    print("1.Auto- Rs.10/-")
+    print("2.Micro- Rs.30/-")
+    print("3.Mini- Rs.50/-")
+    print("4.Prime- Rs.100/-")
+    a=int(input("Please choose the option: "))
+    dist=des-src
+    if(dist<0):
+        dist=-(dist)
+    def auto():
+        amount=dist*10
+        return amount
+    def micro():
+        amount=dist*30
+        return amount
+    def mini():
+        amount=dist*50
+        return amount
+    def prime():
+        amount=dist*100
+        return amount
+    
+    if(a==1):
+        ab=auto()
+        print("Total km you are travelled is {0} and amount you pay {1}".format(dist,ab))
+    elif(a==2):
+        bc=micro()
+        print("Total km you are travelled is {0} and amount you pay {1}".format(dist,bc))
+    elif(a==3):
+        cd=mini()
+        print("Total km you are travelled is {0} and amount you pay {1}".format(dist,cd))
+    elif(a==4):
+        de=prime()
+        print("Total km you are travelled is {0} and amount you pay {1}".format(dist,de))
+    else:
+        printf("Sorry your option is invalid")
+
+    print("Do u want to continue")
+    print("1.Yes")
+    print("2.No")
+    a=int(input("Enter your choice: "))
+    
+
