@@ -1,0 +1,12 @@
+#find the first and last digit of a number
+number = int(input("Please Enter any Number: "))
+def digit():
+    first_digit = number
+    while (first_digit >= 10):
+        first_digit = first_digit // 10
+        last_digit = number % 10
+    print("The First Digit from a Given Number {0} = {1}".format(number, first_digit))
+
+    print("The Last Digit in a Given Number %d = %d" %(number, last_digit))
+    return first_digit,last_digit
+digit()
