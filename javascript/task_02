@@ -1,0 +1,28 @@
+var x = document.createElement("div"); 
+x.id="im";
+var t = document.createTextNode("Paragraph is created."); 
+x.appendChild(t);
+document.body.appendChild(x); 
+
+var y = document.createElement("div"); 
+y.id="im2";
+var  g= document.createTextNode("Another Paragraph is created."); 
+y.appendChild(g);
+document.body.appendChild(y); 
+
+
+var z=document.createElement("button");
+z.id="e";
+var b=document.createTextNode("click me");
+z.appendChild(b);
+document.body.appendChild(z);
+
+
+z.onclick=function(){
+	o()
+};
+function o(){
+	var tmp=document.getElementById("im").innerHTML;
+	document.getElementById("im").innerHTML=document.getElementById("im2").innerHTML;
+	document.getElementById("im2").innerHTML=tmp;
+}
